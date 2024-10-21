@@ -3,8 +3,8 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background: url('../../images/hey1.jpg') no-repeat center center fixed;
   background-size: cover;
-  backdrop-filter: blur(8px); /* Blurry background effect */
-  color: #eaeaea;
+  backdrop-filter: blur(6px); /* Softer blur effect */
+  color: #f5f5f5; /* Slightly brighter for better contrast */
   margin: 0;
   padding: 0;
   height: 100vh; /* Full height of the viewport */
@@ -14,76 +14,82 @@ body {
 }
 
 .app-container {
-  max-width: 1000px;
-  margin: 0 auto; /* This is still useful for responsiveness */
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background for content */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.85); /* Dark background with more opacity */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Stronger shadow for depth */
   text-align: center;
 }
 
-/* Digital Techy Font for Lumen Text */
+/* Typography */
 .digital-font {
-  font-family: 'Press Start 2P', cursive; /* Use the digital font */
-  font-size: 2rem; /* Adjust the size as needed */
-  color: #fff; /* White color for visibility */
-  letter-spacing: 2px; /* Adjust spacing as needed */
-  text-transform: uppercase; /* Uppercase letters */
-  margin: 20px 0; /* Space around the text */
+  font-family: 'Press Start 2P', cursive; /* Retro digital font */
+  font-size: 2.5rem; /* Larger font for prominence */
+  color: #fff; /* Bright white for clarity */
+  letter-spacing: 3px; /* Increase spacing for emphasis */
+  text-transform: uppercase;
+  margin: 30px 0;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Glowing text effect */
 }
 
 /* Button Styling */
 button.record-btn {
-  background-color: #0ef14e;
+  background-color: #1DB954; /* Spotify green for a fresh modern look */
   color: #fff;
-  font-weight: 600;
-  padding: 12px 25px;
-  border-radius: 4px;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 50px; /* Pill-shaped button */
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 30px;
+  gap: 10px;
+  margin-bottom: 40px;
   transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  border: none;
 }
 
 button.record-btn:hover {
-  background-color: #555;
-  transform: translateY(-3px);
+  background-color: #18a353; /* Darker green on hover */
+  transform: translateY(-4px);
 }
 
 /* Input Card */
 .input-card {
-  margin: 20px 0;
-  padding: 12px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid #555;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 25px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid #666;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, box-shadow 0.3s ease-in-out;
 }
 
 .textarea-container {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 textarea.input-area {
   width: 100%;
-  max-width: 600px; 
-  padding: 10px;
-  border: 1px solid #444;
-  border-radius: 4px;
+  max-width: 700px;
+  padding: 12px;
+  border: 1px solid #555;
+  border-radius: 5px;
   font-size: 1rem;
   background-color: #222;
   color: #fff;
   resize: none;
+  transition: border-color 0.2s ease;
 }
 
+textarea.input-area:focus {
+  border-color: #1DB954; /* Match button's green for focus state */
+}
 
 /* Camera Section */
 .camera-section {
@@ -98,15 +104,15 @@ textarea.input-area {
   padding: 15px;
   display: flex;
   justify-content: center;
-  width: 302px;
-  height: 172px;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  height: 180px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: border-color 0.3s ease;
 }
 
 .camera-view:hover {
-  border-color: #555;
+  border-color: #777;
 }
 
 video.video-element {
@@ -120,18 +126,77 @@ video.video-element {
 .loading-container,
 .description-box {
   margin-top: 30px;
-  padding: 15px;
-  border: 1px solid #555;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px solid #666;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   color: #fff;
+  position: relative;
+}
+
+/* Glowing Dots for Loading Effect */
+.loading-dots {
+  display: inline-block;
+}
+
+.loading-dots span {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  background-color: #1DB954;
+  border-radius: 50%;
+  display: inline-block;
+  animation: glowingDots 1.4s infinite both;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes glowingDots {
+  0%, 80%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
 }
 
 /* Footer */
 footer {
-  margin-top: 40px;
+  margin-top: 50px;
   padding: 20px;
-  color: #aaa;
+  color: #bbb;
   font-size: 0.875rem;
+  border-top: 1px solid #666;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .digital-font {
+    font-size: 1.75rem;
+  }
+
+  button.record-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .camera-view {
+    width: 100%;
+    height: auto;
+    transform: scaleX(-1);
+}
 }

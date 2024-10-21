@@ -104,9 +104,8 @@ function App() {
   return (
     <div className="app-container">
       <header>
-      <h1 className="digital-font ">Lumen: Vision for All</h1>
+        <h1 className="digital-font ">Lumen: Vision for All</h1>
       </header>
-
 
       <main>
         <div className="input-card">
@@ -143,7 +142,10 @@ function App() {
           {isLoading ? (
             <div className="loading-container">
               <div className="loader"></div>
-              <p>Generating description...</p>
+              <div className="loading-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <p>generating description...</p>
             </div>
           ) : (
             <div className="description-box">
