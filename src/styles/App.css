@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: url('../../images/hey1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(8px); /* Blurry background effect */
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full height of the viewport */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto; /* This is still useful for responsiveness */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background for content */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+/* Digital Techy Font for Lumen Text */
+.digital-font {
+  font-family: 'Press Start 2P', cursive; /* Use the digital font */
+  font-size: 2rem; /* Adjust the size as needed */
+  color: #fff; /* White color for visibility */
+  letter-spacing: 2px; /* Adjust spacing as needed */
+  text-transform: uppercase; /* Uppercase letters */
+  margin: 20px 0; /* Space around the text */
+}
+
+/* Button Styling */
+button.record-btn {
+  background-color: #0ef14e;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button.record-btn:hover {
+  background-color: #555;
+  transform: translateY(-3px);
+}
+
+/* Input Card */
+.input-card {
+  margin: 20px 0;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #555;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease-in-out;
+}
+
+.textarea-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+textarea.input-area {
+  width: 100%;
+  max-width: 600px; 
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #222;
+  color: #fff;
+  resize: none;
+}
+
+
+/* Camera Section */
+.camera-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.camera-view {
+  border: 2px solid #444;
+  background-color: #333;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  width: 302px;
+  height: 172px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: border-color 0.3s ease;
+}
+
+.camera-view:hover {
+  border-color: #555;
+}
+
+video.video-element {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transform: scaleX(-1);
+}
+
+/* Loading and Description Sections */
+.loading-container,
+.description-box {
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid #555;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.875rem;
+}
