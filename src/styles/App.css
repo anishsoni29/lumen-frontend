@@ -182,21 +182,51 @@ footer {
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .app-container {
-    padding: 20px;
+    padding: 15px;
+    max-width: 95%;
   }
 
   .digital-font {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   button.record-btn {
-    padding: 12px 20px;
-    font-size: 1rem;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .camera-section {
+    flex-direction: column;
+    align-items: center;
   }
 
   .camera-view {
     width: 100%;
     height: auto;
     transform: scaleX(-1);
-}
+  }
+
+  .camera-view video.video-element {
+    transform: scaleX(-1); /* Apply to all screens */
+  }
+  
+
+  .textarea-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  textarea.input-area {
+    max-width: 100%;
+  }
+
+  .loading-container,
+  .description-box {
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.75rem;
+  }
 }
