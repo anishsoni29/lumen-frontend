@@ -99,27 +99,21 @@ textarea.input-area:focus {
 }
 
 .camera-view {
-  border: 2px solid #444;
+  width: 80%;
+  max-width: 320px;
   background-color: #333;
+  border: 2px solid #444;
   padding: 15px;
-  display: flex;
-  justify-content: center;
-  width: 320px;
-  height: 180px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: border-color 0.3s ease;
-}
-
-.camera-view:hover {
-  border-color: #777;
 }
 
 video.video-element {
   width: 100%;
   height: auto;
   border-radius: 4px;
-  transform: scaleX(-1);
+  transform: scaleX(-1); /* Ensure mirroring on all devices */
 }
 
 /* Loading and Description Sections */
@@ -202,14 +196,9 @@ footer {
 
   .camera-view {
     width: 100%;
-    height: auto;
-    transform: scaleX(-1);
+    max-width: 280px;
+    padding: 10px;
   }
-
-  .camera-view video.video-element {
-    transform: scaleX(-1); /* Apply to all screens */
-  }
-  
 
   .textarea-container {
     flex-direction: column;
